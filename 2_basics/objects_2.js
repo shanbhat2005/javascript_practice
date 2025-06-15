@@ -43,11 +43,26 @@ const users=[
 
 ]
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 
-console.log(tinderUser.hasOwnProperty("name"));
+// console.log(tinderUser.hasOwnProperty("name"));
+
+
+const course={
+    courseName:"js in hindi",
+    price:"999",
+    courseInstructor:"hitesh",
+    
+}
+
+// course.courseInstructor
+
+// this is called object destructuring
+const {courseInstructor:teacher} = course
+
+console.log(teacher);
 
