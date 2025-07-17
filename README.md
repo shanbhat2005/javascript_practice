@@ -1,2 +1,1 @@
-# javascript_practice
-learning javascript
+hello made changes to readme file
