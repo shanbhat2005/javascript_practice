@@ -6,7 +6,7 @@ const balance = new Number(33);
 // console.log(score.toFixed(4));
 console.log(score.toPrecision(2));
 
-const hunderds= 10000000
+const hunderds= 10000000;
 // console.log(hunderds.toLocaleString('en-IN'));
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -14,7 +14,6 @@ const hunderds= 10000000
 console.log(Math);
 // converts negative into positive
 console.log(Math.abs(-4));
-
 // rounds the number 
 console.log(Math.round(44.7));
 
