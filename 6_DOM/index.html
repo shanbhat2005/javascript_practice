@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dom learning </title>
-    <style>
-
-        body{
-            background-color:#212121;
-            color:white;
-        }
-    </style>
-</head>
-<body>
-<div class="bg-black">
-<h1 id="title"  class="heading">DOM learning on chai aur code
-    <span style="display : none">test text</span> </h1>
-<p>Lorem ipsum dolor sit amet.</p>
-<ul>
-    <li>one</li>
-    <li>two</li>
-    <li>three</li>
-    <li>four</li>
-</ul>
-<input type="password" name="" id="">
-
-</div>
+    <title>Document</title>
     
+</head>
+<body style="background-color: #212121; color: aliceblue; font-size: large;">
+   <ul class="language">
+    <li>javascript</li>
+   </ul>
+   <script>
+        function addLanguage(langName){
+            const li= document.createElement('li')
+            li.innerHTML=`${langName}`;
+            const ul = document.querySelector('.language')
+            ul.appendChild(li)
+
+        }
+addLanguage('python');
+addLanguage('typescript');
+
+function optiLanguage(langName){
+let li = document.createElement('li')
+li.appendChild(document.createTextNode(langName))
+document.querySelector('.language').appendChild(li)
+}
+optiLanguage('golang');
+
+// edit 
+let secondLang = document.querySelector('li:nth-child(2)')
+let newLi= document.createElement('li')
+newLi.textContent = 'mojo'
+secondLang.replaceWith(newLi)
+ 
+
+    </script>
 </body>
 </html>
